@@ -1,8 +1,20 @@
 -- ============================================================
--- Build Unified Septic Shock Cohort
--- Protocol: septic_shock_cohort_protocol.md
--- Derivation: MIMIC-IV (8,919 patients)
--- Validation: eICU (2,535 patients)
+-- Build the MIMIC-IV septic shock cohort
+--
+-- Inclusion: Sepsis-3, a vasopressor requirement within 48 h of ICU
+--            admission, and a serum lactate >2 mmol/L within 24 h.
+-- Exclusion: cardiac arrest, cirrhosis, acute myocardial infarction,
+--            extracorporeal membrane oxygenation.
+-- Additional: first hospital stay, first ICU stay, age >=18 years,
+--            ICU length of stay >=24 h.
+--
+-- Output: public.ds_mimic_shock — 4,883 patients.
+--         The final analytic cohort is 4,869 after the additional
+--         requirement of at least four evaluable DBP windows; that
+--         step is applied in the analysis stage, not here.
+--
+-- The eICU-CRD replication cohort (n = 3,624) is built with
+-- equivalent criteria by analysis/01_cohort/03_eicu_cohort.py.
 -- ============================================================
 
 -- ============================================================
