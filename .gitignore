@@ -1,0 +1,46 @@
+# --- Data files are never committed -------------------------------------
+# MIMIC-IV and eICU-CRD are distributed under data use agreements that
+# prohibit redistribution. No patient-level data, derived feature tables or
+# model objects may be pushed to this repository.
+*.csv
+*.tsv
+*.pkl
+*.pickle
+*.parquet
+*.h5
+*.hdf5
+*.sqlite
+*.db
+
+# --- Derived outputs ----------------------------------------------------
+*.json
+*.log
+
+# --- Figures and documents ----------------------------------------------
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.pdf
+*.docx
+*.doc
+*.xlsx
+*.pptx
+*.zip
+
+# --- Python -------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- Editors / OS -------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

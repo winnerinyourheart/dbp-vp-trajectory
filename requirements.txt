@@ -1,0 +1,10 @@
+numpy
+pandas
+scipy
+scikit-learn
+statsmodels
+lifelines
+pg8000
+SQLAlchemy
+matplotlib
+Pillow
